@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2026.1.2">
+  <Settings>
+    <Param val="ptb" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="Thank you for your patience." valType="str" updates="None" name="End Message"/>
+    <Param val="{'participant':'f&quot;{randint(0, 999999):06.0f}&quot;', 'session':'001'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="True" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="[]" valType="list" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="True" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="height" valType="str" updates="None" name="Units"/>
+    <Param val="" valType="str" updates="None" name="Use version"/>
+    <Param val="(1024, 768)" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+    <Param val="" valType="str" updates="None" name="backgroundImg"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="float" valType="str" updates="None" name="clockFormat"/>
+    <Param val="{'thisRow.t': 'priority.CRITICAL', 'expName': 'priority.LOW'}" valType="dict" updates="None" name="colPriority"/>
+    <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="warning" valType="code" updates="None" name="consoleLoggingLevel"/>
+    <Param val="Sternberg_exp" valType="str" updates="None" name="expName"/>
+    <Param val="" valType="str" updates="None" name="expVersion"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="" valType="code" updates="None" name="frameRate"/>
+    <Param val="Attempting to measure frame rate of screen, please wait..." valType="str" updates="None" name="frameRateMsg"/>
+    <Param val="PsychToolbox" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="info" valType="code" updates="None" name="logging level"/>
+    <Param val="True" valType="bool" updates="None" name="measureFrameRate"/>
+    <Param val="MIDDLE_BUTTON" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="1" valType="code" updates="None" name="runMode"/>
+    <Param val="False" valType="bool" updates="None" name="rush"/>
+    <Param val="time" valType="str" updates="None" name="sortColumns"/>
+    <Param val="pyglet" valType="str" updates="None" name="winBackend"/>
+  </Settings>
+  <Routines>
+    <Routine name="probe">
+      <RoutineSettingsComponent name="probe" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="probe" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="text_2" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$probe_digit" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="correct_key" plugin="None">
+        <Param val="'y','n'" valType="list" updates="set every repeat" name="allowedKeys"/>
+        <Param val="$correct_answer" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="correct_key" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="True" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="fixation">
+      <RoutineSettingsComponent name="fixation" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="fixation" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="fixation_text" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="fixation_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="0.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="+" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="encoding">
+      <RoutineSettingsComponent name="encoding" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="encoding" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="text" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$digit_set" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="retention">
+      <RoutineSettingsComponent name="retention" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="retention" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="retention_text" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="retention_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="+" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="Instructions">
+      <RoutineSettingsComponent name="Instructions" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="Instructions" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="instructions" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="instructions" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="You will see a set of digits.&amp;#10;&amp;#10;Memorize them.&amp;#10;&amp;#10;Then a single digit will appear.&amp;#10;&amp;#10;Press:&amp;#10;Y → if it was in the set&amp;#10;N → if it was NOT&amp;#10;&amp;#10;Press spacebar to start." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp" plugin="None">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="Instructions"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_loop">
+      <Param name="Selected rows" updates="None" val="" valType="code"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('digit_set', '1 2 7 4 8 5 3'), ('probe_digit', np.int64(8)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '1 2 9 4 3'), ('probe_digit', np.int64(1)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '3 5 1 7 8'), ('probe_digit', np.int64(5)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '5 4 2 1 7'), ('probe_digit', np.int64(6)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '2 1 9 7 5 3 8'), ('probe_digit', np.int64(4)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '5 8 3 1 6'), ('probe_digit', np.int64(7)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '4 5 9'), ('probe_digit', np.int64(8)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '5 7 3 2 4 8 6'), ('probe_digit', np.int64(6)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '4 1 5 2 6 7 9'), ('probe_digit', np.int64(7)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '2 5 7'), ('probe_digit', np.int64(9)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '1 7 9 5 6'), ('probe_digit', np.int64(2)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '9 7 2'), ('probe_digit', np.int64(7)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '6 1 3 2 9'), ('probe_digit', np.int64(8)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '2 7 3 4 6'), ('probe_digit', np.int64(4)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '2 9 5'), ('probe_digit', np.int64(9)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '7 3 8 4 2'), ('probe_digit', np.int64(7)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '3 1 9 4 8 5 2'), ('probe_digit', np.int64(7)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '9 4 1 2 8 5 3'), ('probe_digit', np.int64(6)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '8 3 9'), ('probe_digit', np.int64(6)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '8 7 6'), ('probe_digit', np.int64(4)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '3 8 7 5 9'), ('probe_digit', np.int64(9)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '8 2 5 1 4 3 7'), ('probe_digit', np.int64(6)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '7 6 1 4 3 2 8'), ('probe_digit', np.int64(9)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '6 4 9'), ('probe_digit', np.int64(6)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '9 2 4 5 8'), ('probe_digit', np.int64(6)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '5 2 7 9 1 3 4'), ('probe_digit', np.int64(9)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '1 2 8 6 5 9 3'), ('probe_digit', np.int64(7)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '7 6 3'), ('probe_digit', np.int64(7)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '5 7 2 6 3'), ('probe_digit', np.int64(6)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '1 4 8 5 9 7 2'), ('probe_digit', np.int64(7)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '9 5 6'), ('probe_digit', np.int64(7)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '4 9 6 8 3 5 1'), ('probe_digit', np.int64(2)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '9 7 6 5 3'), ('probe_digit', np.int64(8)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '6 5 3 7 8 9 4'), ('probe_digit', np.int64(1)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '6 1 5'), ('probe_digit', np.int64(8)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '1 4 7'), ('probe_digit', np.int64(1)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '3 9 4 1 2'), ('probe_digit', np.int64(6)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '9 6 3 2 7'), ('probe_digit', np.int64(6)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '5 9 8 2 3'), ('probe_digit', np.int64(4)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '8 3 1 5 7'), ('probe_digit', np.int64(3)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '3 8 5 6 4'), ('probe_digit', np.int64(1)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '2 3 9'), ('probe_digit', np.int64(8)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '4 2 9 7 3 6 8'), ('probe_digit', np.int64(4)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '3 2 8 1 4 5 9'), ('probe_digit', np.int64(7)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '4 5 6'), ('probe_digit', np.int64(6)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '8 9 3 5 4 7 6'), ('probe_digit', np.int64(1)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '1 2 6 4 8 7 9'), ('probe_digit', np.int64(1)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '2 7 3 6 8'), ('probe_digit', np.int64(9)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '5 4 6'), ('probe_digit', np.int64(4)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '7 5 8 2 6'), ('probe_digit', np.int64(9)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '1 4 9 7 3'), ('probe_digit', np.int64(1)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '4 9 1'), ('probe_digit', np.int64(2)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '6 3 8'), ('probe_digit', np.int64(3)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '6 2 5 9 3 1 8'), ('probe_digit', np.int64(8)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '4 6 1'), ('probe_digit', np.int64(4)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '2 4 9'), ('probe_digit', np.int64(1)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '2 4 8 6 3 5 1'), ('probe_digit', np.int64(3)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '3 1 5'), ('probe_digit', np.int64(6)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '9 5 7'), ('probe_digit', np.int64(7)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '5 7 4 1 8 3 9'), ('probe_digit', np.int64(3)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '7 2 3'), ('probe_digit', np.int64(2)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '3 8 1'), ('probe_digit', np.int64(9)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '3 8 1'), ('probe_digit', np.int64(2)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '7 2 4'), ('probe_digit', np.int64(6)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '4 7 1 2 9'), ('probe_digit', np.int64(4)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '7 5 9 4 3'), ('probe_digit', np.int64(4)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '4 8 7 9 2'), ('probe_digit', np.int64(4)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '2 5 8 3 4'), ('probe_digit', np.int64(6)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '5 1 2 3 6 4 8'), ('probe_digit', np.int64(9)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '5 4 2'), ('probe_digit', np.int64(6)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '2 4 6 3 9 5 1'), ('probe_digit', np.int64(2)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '2 3 5'), ('probe_digit', np.int64(5)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '6 5 7 1 3'), ('probe_digit', np.int64(2)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '6 2 8 7 9 4 3'), ('probe_digit', np.int64(2)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '9 1 3 2 8 5 4'), ('probe_digit', np.int64(1)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '7 9 3'), ('probe_digit', np.int64(2)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '7 9 6 2 1 8 5'), ('probe_digit', np.int64(8)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '4 5 9 1 3 2 7'), ('probe_digit', np.int64(9)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '5 4 3 2 7 1 9'), ('probe_digit', np.int64(8)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '4 9 2'), ('probe_digit', np.int64(2)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '6 7 1 9 3'), ('probe_digit', np.int64(4)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '8 1 9'), ('probe_digit', np.int64(4)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '4 3 9'), ('probe_digit', np.int64(3)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '2 3 6'), ('probe_digit', np.int64(4)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '5 1 8 3 2'), ('probe_digit', np.int64(6)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '3 2 9 5 6'), ('probe_digit', np.int64(4)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '1 9 8'), ('probe_digit', np.int64(1)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '2 4 7'), ('probe_digit', np.int64(2)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '9 8 2 7 3'), ('probe_digit', np.int64(8)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '2 1 5 3 4 7 9'), ('probe_digit', np.int64(6)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '7 5 9 4 3 1 2'), ('probe_digit', np.int64(7)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '5 3 9'), ('probe_digit', np.int64(1)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '7 5 4'), ('probe_digit', np.int64(4)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '8 2 4 3 7 9 5'), ('probe_digit', np.int64(2)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '6 2 3'), ('probe_digit', np.int64(7)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '4 2 6 8 3 1 5'), ('probe_digit', np.int64(9)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '3 8 4 9 2 6 7'), ('probe_digit', np.int64(9)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '2 7 5 8 6 9 3'), ('probe_digit', np.int64(4)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '4 9 2 5 8'), ('probe_digit', np.int64(9)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '6 3 4 2 1'), ('probe_digit', np.int64(5)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '1 9 6 3 8'), ('probe_digit', np.int64(1)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '7 3 5 9 8'), ('probe_digit', np.int64(6)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '2 9 6 8 5'), ('probe_digit', np.int64(1)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '2 4 6 9 3 1 8'), ('probe_digit', np.int64(5)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '4 1 5 8 9'), ('probe_digit', np.int64(9)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '4 6 2'), ('probe_digit', np.int64(2)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '5 1 7'), ('probe_digit', np.int64(5)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '9 3 6 5 7'), ('probe_digit', np.int64(5)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '2 4 9 8 6'), ('probe_digit', np.int64(8)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '6 2 1 4 5'), ('probe_digit', np.int64(5)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '4 5 6 8 3 9 7'), ('probe_digit', np.int64(2)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '2 1 6'), ('probe_digit', np.int64(1)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '8 9 4 1 6 3 5'), ('probe_digit', np.int64(7)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '2 9 6 8 4'), ('probe_digit', np.int64(2)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '4 7 9 5 1 8 2'), ('probe_digit', np.int64(4)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '9 4 3 6 8'), ('probe_digit', np.int64(4)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '6 8 4 7 2'), ('probe_digit', np.int64(9)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '1 4 7'), ('probe_digit', np.int64(4)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '5 4 8 1 9 2 3'), ('probe_digit', np.int64(6)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '8 5 9'), ('probe_digit', np.int64(1)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '5 4 1'), ('probe_digit', np.int64(3)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '9 2 4'), ('probe_digit', np.int64(9)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '8 2 1 6 5'), ('probe_digit', np.int64(8)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '4 1 5'), ('probe_digit', np.int64(4)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '2 9 5 8 7'), ('probe_digit', np.int64(5)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '9 1 3 7 2'), ('probe_digit', np.int64(6)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '5 1 8 9 3 2 6'), ('probe_digit', np.int64(7)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '4 7 9 8 2 5 3'), ('probe_digit', np.int64(5)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '9 1 6 5 3'), ('probe_digit', np.int64(9)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '6 4 7 1 3 8 9'), ('probe_digit', np.int64(5)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '8 6 7 4 5 9 3'), ('probe_digit', np.int64(4)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '7 4 3 2 1'), ('probe_digit', np.int64(6)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '2 9 6'), ('probe_digit', np.int64(5)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '3 5 2'), ('probe_digit', np.int64(4)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '6 7 5 9 2'), ('probe_digit', np.int64(1)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '1 8 2 7 4'), ('probe_digit', np.int64(5)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '8 1 5 2 9 4 7'), ('probe_digit', np.int64(7)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '2 5 9 8 3'), ('probe_digit', np.int64(1)), ('correct_answer', 'n'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '5 3 1 7 2 8 4'), ('probe_digit', np.int64(6)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '6 7 3'), ('probe_digit', np.int64(6)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '9 5 8 7 4 6 2'), ('probe_digit', np.int64(3)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '6 5 7 4 9 2 8'), ('probe_digit', np.int64(5)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '6 8 5'), ('probe_digit', np.int64(4)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '3 6 1 2 9'), ('probe_digit', np.int64(1)), ('correct_answer', 'y'), ('set_size', np.int64(5))]), OrderedDict([('digit_set', '7 3 9 4 2 1 5'), ('probe_digit', np.int64(2)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '7 6 3 8 4 9 2'), ('probe_digit', np.int64(5)), ('correct_answer', 'n'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '2 3 8 1 5 6 9'), ('probe_digit', np.int64(5)), ('correct_answer', 'y'), ('set_size', np.int64(7))]), OrderedDict([('digit_set', '7 4 5'), ('probe_digit', np.int64(9)), ('correct_answer', 'n'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '5 1 6'), ('probe_digit', np.int64(1)), ('correct_answer', 'y'), ('set_size', np.int64(3))]), OrderedDict([('digit_set', '8 2 4 6 3 7 9'), ('probe_digit', np.int64(5)), ('correct_answer', 'n'), ('set_size', np.int64(7))])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="sternberg_150_trials.csv" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials_loop" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="fixation"/>
+    <Routine name="encoding"/>
+    <Routine name="retention"/>
+    <Routine name="probe"/>
+    <LoopTerminator name="trials_loop"/>
+  </Flow>
+</PsychoPy2experiment>
