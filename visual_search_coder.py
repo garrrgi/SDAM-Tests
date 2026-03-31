@@ -23,11 +23,10 @@ colors = ['red', 'green', 'blue', 'yellow']
 shapes = ['circle', 'square']
 
 # ---------------- PARAMETERS ----------------
-blocks = 4
-trials_per_block = 60
+blocks = 5
+trials_per_block = 48   # 5 × 48 = 240
 
 set_sizes = [6, 10, 14]
-target_conditions = [True, False]
 
 # ---------------- GRID POSITIONS ----------------
 grid_x = [-250, -125, 0, 125, 250]
@@ -43,9 +42,9 @@ def quit_experiment():
     with open(filename, mode='w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow([
-            "participant", "trial", "block", "set_size",
-            "target_shape", "target_color", "target_present",
-            "response", "correct", "rt"
+            "participant", "trial", "block", "search_type",
+            "set_size", "target_shape", "target_color",
+            "target_present", "response", "correct", "rt"
         ])
         writer.writerows(data)
 
@@ -58,20 +57,12 @@ fixation = visual.TextStim(win, text="+", color='white')
 # ---------------- INSTRUCTIONS ----------------
 instr = visual.TextStim(
     win,
-    text="Press Y if target present\nPress N if absent\n\nPress any key to start",
+    text="Block 1 = Serial Search\nBlocks 2–5 = Conjunction Search\n\nPress Y if target present\nPress N if absent\n\nPress any key to start",
     color='white'
 )
 instr.draw()
 win.flip()
 event.waitKeys()
-
-# ---------------- CREATE BALANCED TRIAL LIST ----------------
-conditions = []
-for ss in set_sizes:
-    for tp in target_conditions:
-        conditions.extend([(ss, tp)] * 40)
-
-random.shuffle(conditions)
 
 trial_index = 0
 
@@ -80,8 +71,10 @@ for block in range(blocks):
 
     for t in range(trials_per_block):
 
-        set_size, target_present = conditions[trial_index]
         trial_index += 1
+
+        set_size = random.choice(set_sizes)
+        target_present = random.choice([True, False])
 
         # -------- FIXATION --------
         fixation.draw()
@@ -90,44 +83,82 @@ for block in range(blocks):
         if 'escape' in event.getKeys():
             quit_experiment()
 
-        # -------- TARGET DISPLAY --------
-        label = visual.TextStim(win, text="TARGET", pos=(0, 150), color='white')
+        # ==================================================
+        # BLOCK 1 = SERIAL SEARCH
+        # ==================================================
+        if block == 0:
+            search_type = "serial"
 
-        mem_shape = random.choice(shapes)
-        mem_color = random.choice(colors)
+            target_shape = "circle"
+            target_color = "red"
 
-        mem_stim = make_stim(mem_shape, mem_color, (0, 0))
+            label = visual.TextStim(win, text="TARGET", pos=(0, 150), color='white')
+            target_stim = make_stim(target_shape, target_color, (0, 0))
 
-        label.draw()
-        mem_stim.draw()
-        win.flip()
-        core.wait(1.5)
-        if 'escape' in event.getKeys():
-            quit_experiment()
+            label.draw()
+            target_stim.draw()
+            win.flip()
+            core.wait(1.5)
 
-        # -------- DELAY --------
-        win.flip()
-        core.wait(1)
-        if 'escape' in event.getKeys():
-            quit_experiment()
+            if 'escape' in event.getKeys():
+                quit_experiment()
+
+            # Delay
+            win.flip()
+            core.wait(1)
+
+            positions = random.sample(grid_positions, set_size)
+
+            stimuli = []
+
+            if target_present:
+                stimuli.append(make_stim(target_shape, target_color, positions[0]))
+
+            for pos in positions[1:]:
+                stimuli.append(make_stim("circle", "blue", pos))
+
+        # ==================================================
+        # BLOCKS 2-5 = CONJUNCTION SEARCH
+        # ==================================================
+        else:
+            search_type = "conjunction"
+
+            target_shape = random.choice(shapes)
+            target_color = random.choice(colors)
+
+            label = visual.TextStim(win, text="TARGET", pos=(0, 150), color='white')
+            target_stim = make_stim(target_shape, target_color, (0, 0))
+
+            label.draw()
+            target_stim.draw()
+            win.flip()
+            core.wait(1.5)
+
+            if 'escape' in event.getKeys():
+                quit_experiment()
+
+            # Delay
+            win.flip()
+            core.wait(1)
+
+            positions = random.sample(grid_positions, set_size)
+
+            stimuli = []
+
+            if target_present:
+                stimuli.append(make_stim(target_shape, target_color, positions[0]))
+
+            for pos in positions[1:]:
+                s = random.choice(shapes)
+                c = random.choice(colors)
+                stimuli.append(make_stim(s, c, pos))
 
         # -------- SEARCH DISPLAY --------
-        positions = random.sample(grid_positions, set_size)
-
-        stimuli = []
-
-        if target_present:
-            stimuli.append(make_stim(mem_shape, mem_color, positions[0]))
-
-        for pos in positions[1:]:
-            s = random.choice(shapes)
-            c = random.choice(colors)
-            stimuli.append(make_stim(s, c, pos))
-
         for stim in stimuli:
             stim.draw()
 
         win.flip()
+
         if 'escape' in event.getKeys():
             quit_experiment()
 
@@ -150,9 +181,10 @@ for block in range(blocks):
             participant,
             trial_index,
             block + 1,
+            search_type,
             set_size,
-            mem_shape,
-            mem_color,
+            target_shape,
+            target_color,
             target_present,
             key,
             correct,
@@ -163,7 +195,11 @@ for block in range(blocks):
 
     # -------- BREAK --------
     if block < blocks - 1:
-        brk = visual.TextStim(win, text="Take a short break\n\nPress SPACE to continue", color='white')
+        brk = visual.TextStim(
+            win,
+            text=f"End of Block {block+1}\n\nPress SPACE to continue",
+            color='white'
+        )
         brk.draw()
         win.flip()
 
@@ -177,9 +213,9 @@ filename = f"{participant}_visual_search.csv"
 with open(filename, mode='w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow([
-        "participant", "trial", "block", "set_size",
-        "target_shape", "target_color", "target_present",
-        "response", "correct", "rt"
+        "participant", "trial", "block", "search_type",
+        "set_size", "target_shape", "target_color",
+        "target_present", "response", "correct", "rt"
     ])
     writer.writerows(data)
 
